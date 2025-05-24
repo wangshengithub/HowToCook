@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="奶酪培根通心粉的做法">奶酪培根通心粉的做法</h1>
+        <p><img src="./oven.jpg" alt="烘烤成品" /> <img
+        src="./onepot.png" alt="非烘烤成品" /></p>
+        <p>这是一道美味的奶酪培根通心粉(Mac and
+        Cheese)，适合四人享用。它结合了浓郁的奶酪和香脆的培根，简单易做，是一道受欢迎的美式家常菜。</p>
+        <p>预估烹饪难度：★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>通心粉</li>
+        <li>奶酪</li>
+        <li>肉类</li>
+        <li>洋葱</li>
+        <li>黄油</li>
+        <li>面粉</li>
+        <li>牛奶</li>
+        <li>大蒜</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每次制作前需要确定计划做几份。一份正好够 2 个人吃。</p>
+        <ul>
+        <li>通心粉 100-125g</li>
+        <li>奶酪 40-55g，若要烘烤额外准备 25g， 条状</li>
+        <li>培根或其他肉类 100-125g</li>
+        <li>洋葱 25g-40g 切成碎</li>
+        <li>黄油 15g</li>
+        <li>面粉 10g</li>
+        <li>牛奶 125ml</li>
+        <li>大蒜半瓣，切碎</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>奶酪要磨成碎末</li>
+        <li>洋葱切成条状</li>
+        <li>通心粉用微咸的水煮 6 分钟</li>
+        <li><strong>中火</strong></li>
+        <li>锅中放入黄油，等待融化</li>
+        <li>加入洋葱</li>
+        <li>洋葱软化后加入大蒜</li>
+        <li>大蒜香味出来后，加入肉类，等待 5 秒</li>
+        <li><strong>小火</strong></li>
+        <li>分四次加入牛奶，每次搅拌 5 秒后再加下一次</li>
+        <li>加入面粉并充分搅拌</li>
+        <li>加入奶酪并搅拌均匀</li>
+        <li>将通心粉和奶酪搅拌</li>
+        <li>如果不打算烘烤，可以直接吃了</li>
+        <li><strong>烘烤：</strong></li>
+        <li>预热烤箱至 180°C</li>
+        <li>将额外的 50g 芝士铺在通心粉之上</li>
+        <li>等待烤箱预热至 180°C 后，将通心粉放入</li>
+        <li>烤至表面金黄,约 24 分钟</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <p>本料理及其不健康，有大约 1300 大卡，80g
+        脂肪，不建议常吃。</p>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

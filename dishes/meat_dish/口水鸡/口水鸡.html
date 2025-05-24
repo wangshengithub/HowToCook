@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="口水鸡的做法">口水鸡的做法</h1>
+        <figure>
+        <img src="./口水鸡.jpg" alt="口水鸡" />
+        <figcaption aria-hidden="true">口水鸡</figcaption>
+        </figure>
+        <p>口水鸡（凉菜），炎炎夏日里，热菜难以入口，但又嗜肉如命，
+        除了口水鸡，实在想不出更好的适合在夏天吃的肉菜了。
+        被红油包裹的鸡肉，红艳鲜亮，冰爽 Q
+        弹，鲜美而不腻。夏日米饭杀手当之无愧!
+        （注：口水鸡做法多样，欢迎补充）</p>
+        <p>预估烹饪难度：★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>半只鸡</li>
+        <li>辣椒粉</li>
+        <li>花椒</li>
+        <li>花生</li>
+        <li>葱姜蒜</li>
+        <li>花椒</li>
+        <li>白糖</li>
+        <li>生抽</li>
+        <li>醋</li>
+        <li>味精</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每份：</p>
+        <ul>
+        <li>食用油 20ml</li>
+        <li>鸡 半只(500g)</li>
+        <li>辣椒粉 20g</li>
+        <li>花椒 30 颗(20g)</li>
+        <li>花生 10 颗(30g)</li>
+        <li>小葱 2 颗(50g)</li>
+        <li>姜 1 小块(20g)</li>
+        <li>蒜 2 个 (10g)</li>
+        <li>白糖 5g</li>
+        <li>生抽 5ml</li>
+        <li>醋 5ml</li>
+        <li>味精 5g</li>
+        <li>花椒粉 5g</li>
+        <li>香菜 5g</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>姜切片，1 颗小葱，15 颗花椒备用</li>
+        <li>鸡肉洗干净，放入锅中，清水没过鸡肉，放入姜片、小葱和花椒，开大火烧开。</li>
+        <li>大火烧开后，转中小火 20 分钟关火</li>
+        <li>取出鸡肉，放入冰水中，直至冰凉</li>
+        <li>取出鸡肉，切块摆盘子中，备用</li>
+        <li>小火把锅烧热，导入花生，烘烤至表皮爆裂。（注意随时翻动，不要糊了）</li>
+        <li>一颗葱切成段，蒜拍成末，花椒 15 颗，花生去皮切碎。</li>
+        <li>锅内导入油烧热后，放入葱段，花椒和一半蒜末，炒香</li>
+        <li>炒至油温 8 成热，关火，滤出热油</li>
+        <li>将热油倒入放辣椒粉的碗中，搅拌，并滤出红油</li>
+        <li>红油中放入剩余蒜末、生抽、醋、盐、味精、糖、香油、花椒粉。拌匀放凉</li>
+        <li>在鸡肉上撒上花生碎，把红油淋到切好的鸡肉上，撒上香菜。成盘</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>口水鸡第二种做法待更</li>
+        <li>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
