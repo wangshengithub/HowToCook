@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="去腥">去腥</h1>
+        <p>去腥是做菜过程中的一道工序。</p>
+        <p>去腥指通过包括但不限于添加调料、焯水等手段去除肉类、水产等食物中腥膻味。</p>
+        <p><strong>腥膻味是某些食物的风味来源，过度去腥可能导致食物丧失风味。</strong></p>
+        <p>去腥的手段多种多样，在烹饪工程中要灵活选择。</p>
+        <h2 id="手段">手段</h2>
+        <h3 id="添加调料">添加调料</h3>
+        <p>在食材中添加调料是最简单的去腥手段。比如对于大部分使用鸡蛋液的菜肴（<a
+        href="../../dishes/vegetable_dish/鸡蛋羹/鸡蛋羹.md">鸡蛋羹</a>，<a
+        href="../../dishes/vegetable_dish/西红柿炒鸡蛋.md">西红柿炒鸡蛋</a>），可以在制作蛋液的过程中加入盐、料酒、食醋等调料来去腥。</p>
+        <p>烹饪某些肉类时，可以在汤底中加入花椒、八角、香叶、桂皮、小茴香、辣椒等香料来去腥。</p>
+        <p>成品麻辣火锅底料具有极其浓郁的香味，可以在烹饪时适量添加，足以覆盖绝大多数肉类的腥味。</p>
+        <h3 id="蘸料">蘸料</h3>
+        <p>某些食物在烹饪之后仍然腥味严重。可以调配蘸料来在食用时掩盖腥味。</p>
+        <p>常见的蘸料原料有：食醋、酱油、香油、豆瓣酱、甜面酱、芝麻酱、花生酱、豆腐乳、食盐、大蒜、生姜等。</p>
+        <p>各种蘸料搭配见仁见智，这里不做举例。</p>
+        <h3 id="炝锅">炝锅</h3>
+        <p>炒菜过程中，可以在过程中使用葱、姜、蒜、干辣椒等香料炝锅。香料中的香味物质在高温的作用下挥发出来，一定程度上能覆盖腥味并且增加成菜的风味。</p>
+        <h3 id="冷水锅焯水">冷水锅焯水</h3>
+        <p>某些动物性原料中残留有血液，如：鸡肉、猪蹄、排骨等。残留的血液如果不去除会导致成菜有一定的腥味。</p>
+        <p>冷水下锅时，残留的血液会分散到水中；随着温度升高，血液中的蛋白质凝固，原本分散在水中的血液形成浮沫飘在水面上。这时只需用勺撇去浮沫即可完成去腥，剩下的清汤可以用作炖煮菜的汤底继续烹饪。</p>
+        <h3 id="注意事项">注意事项</h3>
+        <ul>
+        <li>焯水时往往在锅中加入一些调料如：花椒、八角、料酒、大葱等，进一步强化去腥的力度</li>
+        <li>八角香味浓郁，应适量添加</li>
+        <li>花椒和麻椒体积小而添加量大，添加后可能会残留在锅中甚至残留至成菜，可以使用纱布包裹一个调料包或者使用食品级不锈钢调料盒，方便在成菜前挑出</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="炒煎">炒/煎</h1>
+        <h2 id="器具">器具</h2>
+        <p>可使用普通金属制（铁/不锈钢/铝）炒/煎锅或不粘锅。</p>
+        <p>不建议使用铝制容器, 原因详见食品安全一节</p>
+        <h3 id="注意事项">注意事项</h3>
+        <ul>
+        <li>使用普通锅炒菜不粘的方法：</li>
+        </ul>
+        <h4 id="先炒鸡蛋法">先炒鸡蛋法</h4>
+        <ul>
+        <li>不管炒什么菜之前都炒个鸡蛋，炒完不刷锅，再炒下个菜时就不粘。</li>
+        </ul>
+        <h4 id="热锅凉油法">热锅凉油法</h4>
+        <ul>
+        <li>记住一定要是热锅凉油，首先热锅
+        <ul>
+        <li>干净的锅什么都不放，干烧，使其受热均匀，烧热</li>
+        <li>放入凉油，旋转锅子，使油沾满整个锅（可以来回旋转使其受热均匀）</li>
+        <li>看到有气体从锅中发出时，就表示锅子的油已经烧热了</li>
+        <li>把油倒出来，倒出来后不要刷锅</li>
+        <li>可以重复上述步骤 2-3 遍以得到更好的不粘效果</li>
+        <li>注意：如果是燃气，可能会喷火，注意安全</li>
+        </ul></li>
+        </ul>
+        <h4 id="热锅双油法">热锅双油法</h4>
+        <ul>
+        <li>首先热锅
+        <ul>
+        <li>干净的锅什么都不放，干烧，使其受热均匀，烧热</li>
+        <li>放入“少量凉油”，旋转锅子，使油沾满整个锅（可以来回旋转使其受热均匀）</li>
+        <li>看到有气体从锅中发出时，就表示锅子的油已经烧热了</li>
+        <li>再继续放入凉油，开始炒菜</li>
+        <li>注意：如果是燃气，可能会喷火，注意安全。</li>
+        </ul></li>
+        </ul>
+        <p>补充：</p>
+        <ul>
+        <li>目的是使油挂满锅底，所有市面上的家用锅都适用，挂油后秒变不粘锅。</li>
+        <li>使用不粘锅煎炒食物不会粘锅。不粘锅的功能来源于其内壁上的涂层。<strong>金属锅铲会划伤涂层。使用不粘锅时应使用木制或硅胶锅铲以避免损坏涂层。</strong></li>
+        </ul>
+        <h3 id="流程">流程</h3>
+        <p>开火——直接将锅平放于火上，烧热——将油倒入锅中，烧热——放入菜品，翻炒——出锅前记得放调料</p>
+        <h3 id="注意事项-1">注意事项</h3>
+        <ul>
+        <li>判断锅/油是否烧热时，可将手平放于锅的上方感受热量；油热后方可放入食材。</li>
+        <li>倒油入锅前，务必确认锅的内部没有残余水份。<strong>水会导致热油飞溅，造成危险。</strong></li>
+        <li>接上条，食材放入油锅前，应当沥干水份（蛋液没事）；同理，不可将未解冻的食材放入油锅，以免冰化后造成危险。</li>
+        <li><strong>若油锅起火，切不可倒水灭火</strong>。这样做会使火势扩大。火刚起时，可迅速关火，盖上锅盖。</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

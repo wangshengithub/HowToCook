@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="使用微波炉">使用微波炉</h1>
+        <h2 id="什么是微波炉">什么是微波炉</h2>
+        <p>微波炉是 1945 年由 <a
+        href="https://en.wikipedia.org/wiki/Percy_Spencer">珀西·勒巴朗·斯宾塞</a>
+        发明的。</p>
+        <p>他在担任雷达系统工程师时，由于发现雷达一开启他口袋里的巧克力棒就开始融化，从而产生构想并发明的。</p>
+        <h3 id="工作方式">工作方式</h3>
+        <p>微波时通过磁控管制造的频率 24.5
+        亿赫兹的电磁波，这个频率会使水和油的分子振动并发热。</p>
+        <h2 id="流程">流程</h2>
+        <p>微波炉在很多烹饪任务中效果相当出色。</p>
+        <p>强火适用于：</p>
+        <ul>
+        <li>[烹煮] 烹煮蔬菜</li>
+        <li>[烹煮] 软化含水率高的硬质蔬菜（如马铃薯、洋葱和朝鲜蓟）</li>
+        <li>[膨化] 爆点心，如泡芙、印度帕帕达姆薄脆饼、爆米花</li>
+        </ul>
+        <p>中火适用于：</p>
+        <ul>
+        <li>[烹煮] 海鲜 （例如 <a
+        href="../../dishes/aquatic/微波葱姜黑鳕鱼.md">微波葱姜黑鳕鱼</a>）</li>
+        <li>[烹煮] 软化肉类</li>
+        <li>[脱水] 干燥蔬果皮</li>
+        <li>[脱水] 制作肉干</li>
+        <li>[炸] 炸脆香料植物</li>
+        <li>[炸] 软化叶类蔬菜</li>
+        <li>[加热] 加热剩菜</li>
+        </ul>
+        <p>弱火用于：</p>
+        <ul>
+        <li>[解冻] 解冻食物</li>
+        <li>[解冻] 融化黄油和巧克力</li>
+        </ul>
+        <h2 id="注意事项">注意事项</h2>
+        <ul>
+        <li>微波炉不应该被用于加热水，这可能会致其暴沸，对您的人身安全造成一定影响</li>
+        <li>绝对不要使用微波炉加热鸡蛋！除非它是<strong>去壳</strong>的<strong>生</strong>鸡蛋，并且需要戳破蛋黄。因为加热会使鸡蛋内部的气体膨胀，导致爆炸。</li>
+        <li>不管您是出于什么目的，即使您很好奇，也不应该使用微波炉加热完整的水果（如
+        葡萄、蓝莓、圣女果），这可能会使其爆炸</li>
+        <li>由于微波的波长为 12.2
+        cm，因此微波炉加热小物体的速度要比大物体慢。因此如果是很小的食材，建议聚集在一起进行加热。</li>
+        <li>微波仅能深入食物几厘米，因此有时候外部很烫了，内部可能还是冰凉的。解决办法是将食材加上少量液体放进密封袋，或放入碗中后蒙上保鲜膜，让容器内产生足够的蒸汽来弥补微波炉容易烹饪不均的缺点。
+        <ul>
+        <li>tips：打开密封袋时，当心蒸汽喷出</li>
+        </ul></li>
+        <li>微波只能加热水和油等含有液体分子的物体，因此保鲜膜和密封袋都不会被微波加热。</li>
+        <li>金属能够反射微波而不会被加热，请避免使用含有金边、金属花纹的容器，避免受热不均导致容器破裂。请务必使用瓷、玻璃容器或微波炉专用烤盘。</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

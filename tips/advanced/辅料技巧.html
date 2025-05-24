@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="辅料技巧">辅料技巧</h1>
+        <ul>
+        <li>辅料的放入顺序基本为下：先放姜、后放葱和蒜、辣椒、再放干料（八角/花椒/麻椒）、再放干辣椒。以上每一步骤根据所做菜的不同，可以把不需要的辅料从队列中被移除。</li>
+        <li>姜的含水量是最大的，这意味着我们需要更多的时间将姜的汁水煸出。</li>
+        <li>如果你使用的是葱段（葱段最好使用菜刀拍两下），那么我推荐你先放入葱段，再放入蒜碎，如果你使用的是葱花，那么可以将这两种辅料一起下锅。注：葱段中的汁水更难被炒出。</li>
+        <li>如果你做的是炒菜，那么我更推荐你在没放姜之前先放入干料，这可以让油变得更有味道，以至于炒出来的菜更香。为什么炖菜、焖菜不这样做，是因为你可能需要翻炒很多辅料，以至于辅料翻炒时间过长导致干料变黑、变苦。</li>
+        <li>将干辣椒放在最后是因为干辣椒很容易因为锅的温度而变黑，干辣椒稍微翻炒几秒钟即可。</li>
+        <li>注：不论你喜欢做什么菜系，小火将这些辅料炒至金黄，都可以将整道菜变得更有香味，这是调料所不能给予的。</li>
+        </ul>
+        <h2 id="放盐时机与盐量控制">放盐时机与盐量控制</h2>
+        <ul>
+        <li>快炒料理先加盐，盐量=食材总重量 x0.9%；</li>
+        <li>肉食料理八成熟时加盐，盐量=（食材总重量+30mL
+        汁水）x(1～1.2%);</li>
+        <li>汤料理最后时再加盐，盐量=最开始的水量 x0.8%。</li>
+        <li>一天的总盐量不建议超过 5g，参考<a
+        href="https://www.who.int/zh/news-room/fact-sheets/detail/salt-reduction">WHO</a></li>
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

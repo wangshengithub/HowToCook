@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="糖色的炒制">糖色的炒制</h1>
+        <p>原理： 糖遇高温融化，且在加热不同时间后呈不同性状</p>
+        <p>以炒制 200ml 糖色为例</p>
+        <h2 id="水炒">水炒</h2>
+        <ol type="1">
+        <li>取<strong>锅底有弧度</strong>或<strong>平底面积占1/3以下</strong>的锅</li>
+        <li>向锅中加入 8g
+        冰糖、白砂糖或绵白糖，以冰糖为佳，如果希望糖色甜味更明显可以增加
+        2g 左右</li>
+        <li>向锅中加入 50ml 70°C 热水</li>
+        <li>将锅置于灶台上</li>
+        <li>如使用燃气灶，应将火力调整由大向小调整至最小，使火焰范围不超过水面面积，如使用电磁炉具，开至最小，并时刻准备关闭电源</li>
+        <li>使用锅铲不断搅拌糖水混合物，如果为冰糖此时可以使用锅铲背面或边缘轻轻敲打至粉碎以加速融化，在此过程中如果出现糖尚未融化而已经开始变色的现象，则需要继续加入热水至
+        50ml</li>
+        <li>待糖全部融化后，糖水混合物呈现粘稠状态而颜色呈透明偏白色，如云母颜色，此时应继续搅拌</li>
+        <li>继续搅拌糖水混合物，糖水混合物颜色逐渐呈现白色</li>
+        <li>继续搅拌糖水混合物，糖水混合物颜色开始出现浅浅的棕色</li>
+        <li>继续搅拌糖水混合物，糖水混合物颜色棕色十分明显</li>
+        <li>继续搅拌糖水混合物，糖水混合物颜色呈棕色并出现绵密的气泡</li>
+        <li>继续搅拌糖水混合物，糖水混合物颜色呈棕色并出现绵密的气泡，绵密的小气泡中出现了较大的气泡</li>
+        <li>向锅中加入 150ml 70°C
+        热水，此时锅中的液体呈现出深红棕色，颜色透明清澈，有淡淡焦糖味</li>
+        <li>倒入碗中，获得糖色 200ml</li>
+        </ol>
+        <h2 id="油炒recommanded">油炒(Recommanded)</h2>
+        <ol type="1">
+        <li>同水炒</li>
+        <li>同水炒</li>
+        <li>向锅中加入 10ml 常温食用油</li>
+        <li>同水炒，糖水混合物改为糖油混合物，最后加入 190ml
+        热水，其余略</li>
+        </ol>
+        <h2 id="附糖浆状态及其用途说明">附糖浆状态及其用途说明</h2>
+        <table>
+        <thead>
+        <tr>
+        <th style="text-align: center;">状态</th>
+        <th style="text-align: center;">制备方法</th>
+        <th style="text-align: center;">用途（例）</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td style="text-align: center;">未完全融化糖浆</td>
+        <td style="text-align: center;">水（油）炒8</td>
+        <td style="text-align: center;">挂霜山楂</td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">完全融化糖浆</td>
+        <td style="text-align: center;">水（油）炒9</td>
+        <td style="text-align: center;">冰糖葫芦</td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">焦糖</td>
+        <td style="text-align: center;">水（油）炒11后自然冷却</td>
+        <td style="text-align: center;">焦糖</td>
+        </tr>
+        <tr>
+        <td style="text-align: center;">糖色</td>
+        <td style="text-align: center;">水（油）炒13</td>
+        <td style="text-align: center;">糖色</td>
+        </tr>
+        </tbody>
+        </table>
+        <ul>
+        <li>当使用糖色烹饪如红烧肉等单位体积较小的食物时，可以在第 13
+        步之前直接加入食材快速翻炒至锅底无明显液体堆积，此时再加入水，这样可以更快上色</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

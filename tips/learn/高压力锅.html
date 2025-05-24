@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1
+        id="蒸米炖使用电饭煲高压锅电压力锅">蒸（米）/炖（使用电饭煲/高压锅/电压力锅）</h1>
+        <h2 id="什么是压力锅">什么是压力锅</h2>
+        <p>压力锅其实是一般的锅加上可锁紧的半密封盖，盖上有阀门，可用于控制锅内的压力。</p>
+        <h3 id="工作方式">工作方式</h3>
+        <p>压力锅的工作方式是让蒸汽积聚在锅中，提高锅内的压力。锅内压力提高时，水的沸点也随之提高，可使含水的食物烹煮温度超过
+        100 ℃。</p>
+        <h3 id="优点">优点</h3>
+        <ul>
+        <li>由于压力锅的实际烹饪温度较高，因此可以大幅缩短烹饪时间。</li>
+        <li>压力锅内部的高温可促进褐变和焦糖化，能够产生独有的风味。</li>
+        </ul>
+        <h2 id="流程">流程</h2>
+        <ul>
+        <li>食材和水放入内胆后合盖，<strong>确保锅体密封</strong>，加热。</li>
+        <li>对于韧性较大的食材，如蹄筋类食物，使用高压锅可以较轻松将其煮烂，获得较好口感。</li>
+        <li>压力锅通常有一个自锁阀（浮子阀）。在蒸煮时，随着锅内压力增大，自锁阀会启动并锁闭，隔绝锅内与锅外气体，为锅内增压创造条件。自锁阀启动后还会锁住锅盖，防止强行打开，起到安全保障作用。在蒸煮时需要确认自锁阀不被异物遮挡，让高压锅正常工作。</li>
+        <li>切换至保温状态后，<strong>通过排气阀将锅内蒸汽排空方可开盖</strong>。</li>
+        </ul>
+        <h3 id="注意事项">注意事项</h3>
+        <ul>
+        <li><strong>水蒸气很烫，不要凑到排气阀上。</strong></li>
+        <li>烹饪<strong>流质食物</strong>的过程中，<strong>不要手动排气</strong>，小心喷溅（可以将食材放入密封罐或者真空包装袋中再用高压锅烹饪）。</li>
+        <li>烹饪部分菜系（如汤类）手动放气<strong>可能会影响食物的味道以及口感</strong>。</li>
+        <li>开盖前需确认蒸气已排空。开盖时请勿一次性全部打开，尤其是<strong>不要对着人正面开盖</strong>，以免蒸气烫伤。</li>
+        <li>蒸煮完成后，随着高压锅内气压降低至与外界气压平衡，自锁阀会松开。这个可以作为锅盖是否能打开的判断标志。</li>
+        <li>高压锅的密封依赖锅盖里的密封橡胶圈，对于老旧的高压锅需要检查密封橡胶圈是否仍然有效。</li>
+        <li>确认橡胶圈完全干净，任何微粒卡在其中都可能破坏密闭环境。</li>
+        <li>很多压力锅有一个安全线，材料和液体不应该超过这个线，太多的食材和液体可能会让水蒸气喷涌堵塞排气阀，或喷溅出太多水蒸气不好清理。</li>
+        <li>没有安全线的压力锅，最好也不要让水位线超过锅体的 2/3。</li>
+        <li><strong>不要使用高压锅烹饪燕麦或者挂面等容易产生泡沫的食物</strong>。泡沫可能会阻塞蒸汽阀和泄压管。</li>
+        <li>烹饪过程中，当压力阀升高并喷出蒸汽或者烟雾时，说明高压锅内部过度加压，压力阀为了保证安全，释放出了多余的压力。尽管喷出的蒸汽带有浓郁的香味会带来较高的愉悦感，但一来食物的风味有损失，二来过度加压可能会使部分类型高压锅的卡槽弯曲。因此当看到喷出蒸汽时，可减小火力。</li>
+        <li>tips：从侧面开盖是一种不错的选择。</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

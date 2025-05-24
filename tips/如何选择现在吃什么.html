@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="如何决策吃什么">如何决策吃什么</h1>
+        <p>如何决策吃什么也是我做菜之前一大难题。所以只能用数学描述一下了。</p>
+        <h2 id="计算方法">计算方法</h2>
+        <h3 id="计算荤菜和素菜数量">计算荤菜和素菜数量</h3>
+        <ul>
+        <li>菜的数量 = 人数 + 1。</li>
+        <li>荤菜比素菜多一个，或一样多即可。</li>
+        </ul>
+        <p>由此得到荤菜数量和素菜数量，再在上一步的菜谱中选择即可。</p>
+        <h4 id="形式语言描述">形式语言描述</h4>
+        <p>当 有人数 <code>N</code> 时， 设 <code>素菜数</code> 为
+        <code>a</code>, <code>荤菜数</code>为 <code>b</code>。
+        <code>N</code>, <code>a</code>, <code>b</code>均为整数。</p>
+        <p>此时有下列不等式组：</p>
+        <ul>
+        <li>a + b = N + 1</li>
+        <li>a ≤ b ≤ a+1</li>
+        </ul>
+        <p>解得</p>
+        <div class="sourceCode" id="cb1"><pre
+        class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> a <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>((N<span class="op">+</span><span class="dv">1</span>)<span class="op">/</span><span class="dv">2</span>)<span class="op">;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> b <span class="op">=</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">ceil</span>((N<span class="op">+</span><span class="dv">1</span>)<span class="op">/</span><span class="dv">2</span>)<span class="op">;</span></span></code></pre></div>
+        <h3 id="菜的选择">菜的选择</h3>
+        <ul>
+        <li>如果人数超过 8 人，考虑在荤菜中增加鱼类荤菜。</li>
+        <li>如果有小孩，考虑增加有甜味的菜。</li>
+        <li>考虑增加特色菜、拿手菜。</li>
+        <li>注意决策荤菜时不要全部使用同一种动物的肉。考虑顺序为：<code>猪肉</code>、<code>鸡肉</code>、<code>牛肉</code>、<code>羊肉</code>、<code>鸭肉</code>、<code>鱼肉</code>。</li>
+        <li>不要选择奇奇怪怪的动物做荤菜。</li>
+        </ul>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
