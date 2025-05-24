@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="水煮鱼的做法">水煮鱼的做法</h1>
+        <p>水煮鱼是一道做法中等难度的硬菜。巴沙鱼富含优质蛋白且脂肪含量低，配合各种时令蔬菜十分营养健康。初学者一般需要
+        2 小时即可完成。</p>
+        <p>预估烹饪难度：★★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>巴沙鱼</li>
+        <li>蔬菜（比如土豆片/豆芽/花菜/生菜/……）</li>
+        <li>红油豆瓣酱</li>
+        <li>藤椒油</li>
+        <li>菜籽油</li>
+        <li>白胡椒粉</li>
+        <li>蒜瓣</li>
+        <li>盐</li>
+        <li>糖</li>
+        <li>量杯</li>
+        <li>厨房秤（可选）</li>
+        <li>大不锈钢碗</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>以下用量适合 3 至 5 人食用。</p>
+        <ul>
+        <li>巴沙鱼 500g</li>
+        <li>蔬菜（比如土豆片/豆芽/花菜/生菜/……）
+        可有不同搭配，推荐合计重量 300g 至 500g</li>
+        <li>红油豆瓣酱 40g （不怕辣想多加红油就多加 10 至 20g）</li>
+        <li>豆豉 10g （可选）</li>
+        <li>藤椒油 10ml</li>
+        <li>菜籽油 25ml</li>
+        <li>白胡椒粉 3g</li>
+        <li>大蒜 2 瓣</li>
+        <li>盐 5g</li>
+        <li>糖 2g</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>准备：巴沙鱼若是从冷冻柜里取出，需要放室温自然解冻 5
+        小时再做切片处理。</li>
+        <li>切片：巴沙鱼撇成薄片，约 5cm 长，3cm 宽。</li>
+        <li><a
+        href="../../tips/learn/学习腌.md">腌制</a>：将切好片的巴沙鱼放入大不锈钢碗中</li>
+        <li>加入 30g 豆瓣酱，3g 盐，10ml 藤椒油，3g 白胡椒粉</li>
+        <li>用手抓匀后加入 5ml 菜籽油收尾封住口味</li>
+        <li>常温静置至少 30 分钟入味。</li>
+        <li>备菜：大蒜切成蒜末。以 300g 花菜，200g
+        生菜为例，将花菜与生菜洗净。</li>
+        <li>焯水与炒菜：花菜<a
+        href="../../tips/learn/学习焯水.md">开水锅焯水</a>备用；将生菜洗净晾干，炒熟备用（不用放油）。</li>
+        <li>炒豆瓣酱：热锅冷油（菜籽油 20ml），加入 10g 豆瓣酱，10g
+        豆豉（可选），加入蒜末，<strong>中火</strong>慢炒。</li>
+        <li>汆鱼片：加入 150ml
+        热水，水很快开后加入腌制好的鱼片，轻轻翻动让鱼片在水中散开，加入
+        2g 盐和 2g
+        糖调味（此时可根据个人口味调整盐的用量）。水再次沸腾后即可盛盘。</li>
+        <li>盛盘：先将熟的蔬菜盛至大碗中，然后将热的鱼片盛在蔬菜上面，浇上锅中剩余热汤即可！</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>垫底的蔬菜组合及用量可自由发挥，但需要注意各种蔬菜的特点，比如改成土豆的时候，需要将土豆片/土豆块煮熟（可以用筷子戳一戳确认）。</li>
+        <li>红油豆瓣酱（辣度）以及盐的用量可根据个人口味调整。</li>
+        <li>注意切鱼片的时候可以垂直于鱼片长条的方向先剁成 5cm
+        的鱼块，然后翻转 90 度斜着撇成薄片。</li>
+        <li><a
+        href="../../tips/learn/学习腌.md">腌制</a>的时候注意不要太用力抓。</li>
+        <li><a href="https://www.youtube.com/watch?v=uXSgGtMkgro">How to
+        Fillet a Fish 怎样给鱼剔骨</a></li>
+        </ul>
+        <h3 id="参考资料">参考资料</h3>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

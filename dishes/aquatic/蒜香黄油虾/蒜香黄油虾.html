@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="蒜香黄油虾的做法">蒜香黄油虾的做法</h1>
+        <p>蒜香黄油虾是一道经典的西式海鲜料理，以鲜虾为主料，配以蒜末和黄油烹制而成。口感鲜嫩，蒜香浓郁。制作简单，适合家庭日常烹饪。</p>
+        <figure>
+        <img src="./1.jpg" alt="蒜香黄油虾" />
+        <figcaption aria-hidden="true">蒜香黄油虾</figcaption>
+        </figure>
+        <p>预估烹饪难度：★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>大虾（推荐黑虎虾或基围虾）</li>
+        <li>无盐黄油（推荐安佳）</li>
+        <li>大蒜</li>
+        <li>白葡萄酒（可选）</li>
+        <li>柠檬</li>
+        <li>平底煎锅</li>
+        <li>厨房用夹</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每次制作前需要确定计划做几份。一份正好够 1-2 人食用。</p>
+        <p>每份：</p>
+        <ul>
+        <li>大虾 8-10 只（约 200g）</li>
+        <li>无盐黄油 30g</li>
+        <li>大蒜 4 瓣（约 20g）</li>
+        <li>白葡萄酒 15ml（可选）</li>
+        <li>柠檬 1/4 个</li>
+        <li>橄榄油 10ml</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>大虾去头去壳留尾，用牙签挑去虾线，洗净后用厨房纸吸干水分</li>
+        <li>大蒜切成蒜末，备用</li>
+        <li>中火加热平底锅，放入 10ml 橄榄油</li>
+        <li>油热后放入大虾，每面煎 1-1.5 分钟至变色，取出备用</li>
+        <li>同一锅中加入黄油，融化后放入蒜末，小火炒香（约 30 秒）</li>
+        <li>如使用白葡萄酒，此时加入并煮至酒精挥发（约 1 分钟）</li>
+        <li>将虾放回锅中，与蒜香黄油酱汁翻炒均匀（约 1 分钟）</li>
+        <li>挤入柠檬汁，翻炒均匀后立即关火</li>
+        <li>装盘，淋上锅中剩余酱汁</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>虾不宜过度烹饪，否则会变硬</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

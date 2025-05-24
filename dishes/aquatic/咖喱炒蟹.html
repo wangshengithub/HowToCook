@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="咖喱炒蟹的做法">咖喱炒蟹的做法</h1>
+        <p>第一次吃咖喱炒蟹是在泰国的建兴酒家中餐厅，爆肉的螃蟹挂满有蟹黄味道的咖喱，味道真的绝，喜欢吃海鲜的程序员绝对不能错过。操作简单，对沿海的程序员非常友好。</p>
+        <p>预估烹饪难度：★★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>青蟹（别称：肉蟹）</li>
+        <li>咖喱块（推介乐惠蟹黄咖喱）</li>
+        <li>洋葱</li>
+        <li>椰浆</li>
+        <li>鸡蛋</li>
+        <li>生粉（别称：淀粉）</li>
+        <li>大蒜</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每次制作前需要确定计划做几份。一份正好够 1 个人食用</p>
+        <p>总量：</p>
+        <ul>
+        <li>肉蟹 1 只（大约 300g） * 份数</li>
+        <li>咖喱块 15g（一小块）*份数</li>
+        <li>椰浆 100ml*份数</li>
+        <li>鸡蛋 1 个 *份数</li>
+        <li>洋葱 200g *份数</li>
+        <li>大蒜 5 瓣 *份数</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>肉蟹掀盖后对半砍开，蟹钳用刀背轻轻拍裂，切口和蟹钳蘸一下生粉，不要太多。撒
+        5g 生粉到蟹盖中，盖住蟹黄，备用</li>
+        <li>洋葱切成洋葱碎，备用</li>
+        <li>大蒜切碎，备用</li>
+        <li>烧一壶开水，备用</li>
+        <li>起锅烧油，倒入约 20ml 食用油，等待 10 秒让油温升高</li>
+        <li>将螃蟹切口朝下，轻轻放入锅中，煎 20
+        秒，这一步主要是封住蟹黄，蟹肉。然后翻面，每面煎 10
+        秒。煎完将螃蟹取出备用</li>
+        <li>将螃蟹盖放入锅中，使用勺子舀起锅中热油泼到蟹盖中，煎封住蟹盖中的蟹黄，煎
+        20 秒后取出备用</li>
+        <li>不用刷锅，再倒入 10ml
+        食用油，大火让油温升高至轻微冒烟，将大蒜末，洋葱碎倒入，炒 10
+        秒钟</li>
+        <li>将咖喱块放入锅中炒化（10 秒），放入煎好的螃蟹，翻炒均匀</li>
+        <li>倒入开水 300ml，焖煮 3 分钟。</li>
+        <li>焖煮完后，倒入椰浆和蛋清，关火，关火后不断翻炒，一直到酱汁变浓稠。</li>
+        <li>出锅</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>做法参考：<a
+        href="https://www.bilibili.com/video/BV1Nq4y1W7K9">十几年澳门厨房佬教学挂汁的咖喱蟹怎么做</a></li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
