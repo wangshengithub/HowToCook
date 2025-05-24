@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="炸薯条的做法">炸薯条的做法</h1>
+        <figure>
+        <img src="./炸薯条.jpg" alt="炸薯条" />
+        <figcaption aria-hidden="true">炸薯条</figcaption>
+        </figure>
+        <p>薯条🍟是一种土豆🥔🥔🥔切成条状之后再油炸而成的快餐食物（在有的国家可能不算快餐），非常适合。相较于油炸，空气炸锅可能会更加易于避免崩溃和实现异步非阻塞。相较于自己动手切土豆再洗去淀粉并喷上油，使用半成品薯条可能会显著减少热量摄入前的热量消耗，四舍五入就是会显著减少热量摄入<del>前的热量消耗</del>。</p>
+        <p>预估烹饪难度：★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>1 袋半成品薯条（推荐品牌麦肯）</li>
+        <li>1 个空气炸锅（喜欢脆的切忌小牌子）</li>
+        </ul>
+        <blockquote>
+        <p>注意，使用的烹饪工具不同炸薯条可能有不同的做法，这里仅介绍使用「空气炸锅」的做法。</p>
+        </blockquote>
+        <h2 id="计算">计算</h2>
+        <ul>
+        <li>作为主食，1 人 1 顿 400g（以半成品为准）</li>
+        <li>作为小食，1 人 1 顿 1/4 主食质量+-50g</li>
+        </ul>
+        <blockquote>
+        <p>使用上述条件，按需求量（包括但不限于日常食量、心情和饭前运动情况）计算材料用量。</p>
+        </blockquote>
+        <h2 id="操作">操作</h2>
+        <h3 id="开封薯条">开封薯条</h3>
+        <ul>
+        <li>开封大分量半成品薯条注意开口要小，可以有效减少长久储藏下薯条表面结霜。</li>
+        </ul>
+        <h3 id="预热空气炸锅">预热空气炸锅</h3>
+        <ul>
+        <li>插电，200℃预热 5 分钟。</li>
+        <li>预热的目的是为了确保放入食材的时候锅内温度已经处于烹饪所需温度。</li>
+        <li>注意，预热完再拿出薯条，不应等薯条软化后再炸制。</li>
+        </ul>
+        <h3 id="炸薯条">炸薯条</h3>
+        <ul>
+        <li>取出薯条放入空气炸锅，200℃20 分钟。</li>
+        <li>取出薯条的时候注意半成品薯条已经有油，所以要异步去做客户端内刀斯林的话需要使用夹持工具。</li>
+        <li>5~10 分钟时可以拿出锅体晃动使薯条受热均匀也防止粘连。</li>
+        </ul>
+        <h3 id="脆化可选项">脆化（可选项）</h3>
+        <ul>
+        <li>10 分钟~15 分钟时，拿出锅体，往已经干了的薯条表面喷 1
+        层面积为薯条表面积 2/3 的油。</li>
+        </ul>
+        <h3 id="取出装盘">取出&amp;装盘</h3>
+        <ul>
+        <li>喜欢脆薯条的，取出后拿着锅体跳舞让空气经过薯条表面后装盘；喜欢软薯条的直接装盘。配合蘸酱或浇上酱汁更佳。</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>番茄酱、蛋黄酱、蜂蜜芥末酱、<a
+        href="../../condiment/蒜香酱油.md">蒜香酱油</a>……炸薯条的晋级之路在于对酱料及酱料组合的探究。</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
