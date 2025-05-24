@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="湖南家常红烧肉的做法">湖南家常红烧肉的做法</h1>
+        <figure>
+        <img src="./湖南家常红烧肉.jpeg" alt="湖南家常红烧肉" />
+        <figcaption aria-hidden="true">湖南家常红烧肉</figcaption>
+        </figure>
+        <p>湖南家常红烧肉，入口软糯，肥而不腻</p>
+        <p>预估烹饪难度：★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>带皮五花肉</li>
+        <li>干小米椒🌶（根据个人情况而定）</li>
+        <li>姜</li>
+        <li>生抽</li>
+        <li>老抽</li>
+        <li>香叶</li>
+        <li>桂皮</li>
+        <li>八角</li>
+        <li>冰糖</li>
+        <li>料酒</li>
+        <li>盐</li>
+        <li>冰糖（锁油上色）</li>
+        <li>食用油</li>
+        <li>开水</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>一份正好够 2 人吃。</p>
+        <ul>
+        <li>五花肉：500g</li>
+        <li>食用油：10g</li>
+        <li>香叶 5 片</li>
+        <li>姜 3 片</li>
+        <li>桂皮 1 小块</li>
+        <li>冰糖 6 颗</li>
+        <li>料酒 20 克</li>
+        <li>生抽 5 克</li>
+        <li>老抽 2 克</li>
+        <li>盐 2 克</li>
+        <li>八角 3 颗</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>带皮五花肉洗净冷水下锅，加入姜片 2~3
+        片去腥味，煮到沸腾捞出冷水冲净白沫</li>
+        <li>五花肉切块，尺寸 1.5cm*1.5cm 块状大小</li>
+        <li>热锅加入油，加入冰糖小火搅拌至焦糖色即可，加入切好的五花肉，中火翻炒上色</li>
+        <li>加入备好的姜片、八角、桂皮、生抽、老抽、料酒、干小米椒、盐，小火翻炒
+        1 分钟，加开水没过肉</li>
+        <li>加盖中火煮沸，转小火慢顿 30 分钟，慢炖期间，间隔 10
+        分钟搅拌一次防止粘锅</li>
+        <li>小火慢炖汤汁剩三分之一的时，调成中火收汁出锅。</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

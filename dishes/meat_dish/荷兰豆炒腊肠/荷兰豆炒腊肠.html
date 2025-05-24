@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="荷兰豆炒腊肠的做法">荷兰豆炒腊肠的做法</h1>
+        <figure>
+        <img src="./1.png" alt="荷兰豆炒腊肠" />
+        <figcaption aria-hidden="true">荷兰豆炒腊肠</figcaption>
+        </figure>
+        <p>荷兰豆炒腊肠是一道营养丰富，口感清爽，有利于开胃助食，增进食欲的美味菜肴。荷兰豆中富含人体所需的各种营养物质，尤其是含有优质蛋白质，可以提高机体的抗病能力和康复能力。</p>
+        <p>预估烹饪难度：★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>荷兰豆</li>
+        <li>腊肠</li>
+        <li>生抽</li>
+        <li>食用油</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>下面是一人份。</p>
+        <p>每份：</p>
+        <ul>
+        <li>荷兰豆大约 50 个</li>
+        <li>腊肠约 100 g</li>
+        <li>食用油 10ml</li>
+        <li>生抽 10ml</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li><p>把荷兰豆去掉蒂，有时间的也可以同时把尾部去掉</p></li>
+        <li><p>买腊肠之前可以问老板是生的还是熟的，如果是生的，需要提前蒸一下，如果是熟的可以直接使用</p></li>
+        <li><p>把荷兰豆清洗一下，然后焯一下水，大概
+        45s，荷兰豆焯至变色即可，捞出过凉水备用</p></li>
+        <li><p>热锅，锅内放入大约 10ml 食用油。等待 10
+        秒让油温升高</p></li>
+        <li><p>放入腊肠，保持翻炒至腊肠<em>微微卷边</em>，注意这里一定要<strong>保持小火</strong>，小到不能小的那种，不然容易糊</p></li>
+        <li><p>放入荷兰豆，转为中大火，翻炒 30s 放入生抽，接着再翻炒
+        20-30s 即可</p>
+        <figure>
+        <img src="./2.png" alt="荷兰豆炒腊肠" />
+        <figcaption aria-hidden="true">荷兰豆炒腊肠</figcaption>
+        </figure></li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>在制作过程中没有放盐，是因为腊肠本身会有一些味道，同时生抽也会有一些咸味。</li>
+        <li>腊肠虽然味道不错，但属于不太健康的食物，建议少放。</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="宫保鸡丁的做法">宫保鸡丁的做法</h1>
+        <p>老派川菜的简单做法分享</p>
+        <p>预估烹饪难度：★★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>手枪腿（或者鸡胸脯肉）</li>
+        <li>大葱</li>
+        <li>干辣椒（或者二荆条）</li>
+        <li>熟花生</li>
+        <li>生抽酱油</li>
+        <li>香醋</li>
+        <li>白糖</li>
+        <li>料酒</li>
+        <li>盐</li>
+        <li>鸡精</li>
+        <li>淀粉</li>
+        <li>植物油</li>
+        <li>芝麻油</li>
+        </ul>
+        <h3 id="可选原料">可选原料</h3>
+        <ul>
+        <li>油泼辣子</li>
+        <li>莴笋</li>
+        <li>生花生</li>
+        <li>豆瓣酱</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>注意，这道菜默认一人版本，两人也够吃，理论上多人只需简单加倍即可。</p>
+        <ul>
+        <li>必须配料
+        <ul>
+        <li>手枪腿（或者鸡胸脯肉） = 1 支（约 350g）</li>
+        <li>大葱 = 1 根（约 180g）</li>
+        <li>熟花生 = 150g</li>
+        <li>姜片 = 10g</li>
+        <li>干辣椒（或者二荆条） = 10g（若选择二荆条，则需要大约 4
+        支）</li>
+        <li>生抽酱油 = 10g</li>
+        <li>白糖 = 2g</li>
+        <li>盐 = 2g</li>
+        <li>植物油 = 20g</li>
+        <li>淀粉 = 15g</li>
+        <li>料酒 = 15g</li>
+        </ul></li>
+        <li>进阶配料
+        <ul>
+        <li>老抽酱油 = 5g</li>
+        <li>花椒 = 5g</li>
+        <li>香醋 = 5g</li>
+        <li>鸡精 = 2g</li>
+        <li>芝麻油 = 10g</li>
+        <li>淀粉（用以勾芡） = 10g</li>
+        <li>豆瓣酱 = 10g</li>
+        </ul></li>
+        <li>可选配料
+        <ul>
+        <li>莴笋 = 约 250g</li>
+        <li>油泼辣子 = 5g</li>
+        </ul></li>
+        </ul>
+        <p>使用上述条件，计算出计划使用的原材料比例，依口味调整。</p>
+        <h2 id="操作">操作</h2>
+        <h3 id="简易版本">简易版本</h3>
+        <ul>
+        <li>手枪腿用剪刀去骨，鸡肉面用刀背拍打一遍，切条后切至 1.5cm
+        见方肉丁；泡于清水 10
+        分钟，捞出控干备用（若是鸡胸脯肉，则可以直接进行切丁以及之后的动作）</li>
+        <li>取大葱葱绿与姜片 5g 于碗中，倒入 50g 开水备用；葱白切 1.5cm
+        圆粒备用；取花生放入微波炉高火 5 分钟焙干备用</li>
+        <li>鸡丁中加入盐 2g，老抽酱油 5g，料酒 15g，淀粉 15g
+        搅拌均匀，至微微发干；缓慢加入部分葱姜水，搅拌鸡丁至粘手；保鲜膜密封，放入冰箱腌制
+        1 小时</li>
+        <li>干辣椒切段；起锅，大火烧热转小火；放入干辣椒焙干至微微发糊，捞起备用；花椒焙干至有香味，捞起备用</li>
+        <li>转大火，倒入 20g 植物油，7
+        成热（竹筷子起泡）下入鸡丁，煎至上面开始发白，用锅铲翻面，煎 30s
+        后翻炒均匀</li>
+        <li>下入葱粒翻炒，加入余下葱姜水不够 100g
+        再加一点清水（务必是热水）；盖上锅盖，转中小火焖 2 分钟；</li>
+        <li>转大火，下入熟花生，干辣椒和花椒；加入鸡精 2g，香醋 5g，白糖
+        2g，翻炒均匀；</li>
+        <li>淀粉 10g 加 50g
+        清水调成水淀粉，加入锅中，翻炒均匀，收汁到自己想要的浓度</li>
+        <li>关火，淋入芝麻油 10g，即可出锅</li>
+        </ul>
+        <h3
+        id="稍加复杂但是更加令人垂涎欲滴的版本">稍加复杂但是更加令人垂涎欲滴的版本</h3>
+        <p>相较于简单版本，这里更加推荐使用二荆条与生花生。并且加入了莴笋陪衬花生的香脆与鸡肉的松软</p>
+        <ul>
+        <li>莴笋去皮切至 1cm 见方的小块，备用；</li>
+        <li>二荆条切成 1cm 长段；</li>
+        <li>手枪腿用剪刀去骨，鸡肉面用刀背拍打一遍，切条后切至 1.5cm
+        见方肉丁；泡于清水 10
+        分钟，捞出控干备用（若是鸡胸脯肉，则可以直接进行切丁以及之后的动作）；</li>
+        <li>取大葱葱绿与姜片 5g 于碗中，倒入 50g 开水备用；葱白切 1.5cm
+        圆粒备用</li>
+        <li>鸡丁中加入盐 2g，老抽酱油 5g，料酒 15g，淀粉 15g
+        搅拌均匀，至微微发干；缓慢加入部分葱姜水，搅拌鸡丁至粘手；保鲜膜密封，放入冰箱腌制
+        1 小时</li>
+        <li>转中火，倒入 20g
+        植物油，放入生花生翻炒至其表面微微焦糊，捞起花生但是油留在锅内；</li>
+        <li>继续加热，7 成热（竹筷子起泡）下入鸡丁，放入豆瓣酱，翻炒大概
+        1 分钟；</li>
+        <li>加入备好的莴笋丁，继续翻炒 1 分钟；</li>
+        <li>下入葱粒翻炒，加入余下葱姜水不够 100g
+        再加一点清水（务必是热水）；加入二荆条段；盖上锅盖，转中小火焖 2
+        分钟；</li>
+        <li>转大火，下入先前捞起来备用的花生，花椒；加入鸡精 2g，香醋
+        5g，白糖 2g，翻炒均匀；</li>
+        <li>淀粉 10g 加 50g
+        清水调成水淀粉，加入锅中，翻炒均匀，收汁到自己想要的浓度</li>
+        <li>关火，淋入芝麻油 10g 与油泼辣子 5g 再翻炒 10s，即可出锅</li>
+        </ul>
+        <figure>
+        <img src="./宫保鸡丁.jpg" alt="宫保鸡丁" />
+        <figcaption aria-hidden="true">宫保鸡丁</figcaption>
+        </figure>
+        <h2 id="附加内容">附加内容</h2>
+        <p>辣椒依据个人口味酌量添加，怕辣可去籽；</p>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
