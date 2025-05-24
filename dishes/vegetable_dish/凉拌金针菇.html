@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="凉拌金针菇的做法">凉拌金针菇的做法</h1>
+        <p>凉拌金针菇是一道简单快捷的开胃凉菜。口感脆嫩爽滑，富含膳食纤维和多种维生素。制作过程无需复杂的烹饪技巧，非常适合新手和忙碌时快速准备。一般初学者只需要
+        10 分钟即可完成。</p>
+        <p>预估烹饪难度：★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>金针菇</li>
+        <li>小葱</li>
+        <li>大蒜</li>
+        <li>生抽</li>
+        <li>醋</li>
+        <li>白糖（可选）</li>
+        <li>香油（可选）</li>
+        <li>辣椒油（可选）</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每次制作前需要确定计划做几份。一份正好够 1 个人吃。</p>
+        <p>每份：</p>
+        <ul>
+        <li>金针菇 150 g （约 1 小包）</li>
+        <li>小葱 5 g</li>
+        <li>大蒜 2 瓣</li>
+        <li>生抽 15 ml</li>
+        <li>醋 10 ml</li>
+        <li>白糖 3 g（可选）</li>
+        <li>香油 5 ml（可选）</li>
+        <li>辣椒油 5 ml（可选）</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>将 金针菇 根部切除，用清水冲洗干净，备用。</li>
+        <li>将 小葱 洗净，切成葱花，备用。</li>
+        <li>将 大蒜 去皮，切成蒜末，备用。</li>
+        <li>锅中加入 1000 ml 饮用水，大火烧开。</li>
+        <li>放入 金针菇，煮 <strong>1-2
+        分钟</strong>，至金针菇变软。</li>
+        <li>将 煮好的 金针菇
+        捞出，沥干水分，放入一个较大的碗中，备用。</li>
+        <li>在另一个干净的小碗中，加入 15 ml 生抽，10 ml 醋，3 g
+        白糖（可选），5 ml 香油（可选）。</li>
+        <li>加入切好的 大蒜末。</li>
+        <li>搅拌均匀，使 白糖 充分溶解，酱汁混合均匀。</li>
+        <li>将制作好的酱汁均匀淋在 金针菇 上。</li>
+        <li>撒上切好的 小葱花。</li>
+        <li>根据个人喜好，淋上 5 ml 辣椒油（可选）。</li>
+        <li>用 筷子 轻轻拌匀，即可食用。</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>金针菇焯水时间不宜过长，以免影响口感。</li>
+        <li>酱汁的比例可以根据个人口味喜好进行调整。</li>
+        <li>如果不喜欢吃辣，可以省略辣椒油。</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
