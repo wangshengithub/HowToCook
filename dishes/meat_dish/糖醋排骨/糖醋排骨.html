@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="糖醋排骨的做法">糖醋排骨的做法</h1>
+        <p>糖醋排骨是一道具有代表性的传统名菜，以其独特的酸甜口味深受大众喜爱。本菜谱在保留原有风味的基础上，对用料绑定、火候控制以及操作细节作了优化，旨在提高菜谱的可迁移性和可执行性。</p>
+        <p><img src="./1.jpeg" alt="示例菜成品" /> <img src="./2.jpeg"
+        alt="示例菜成品" /></p>
+        <p>预估烹饪难度：★★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>排骨</li>
+        <li>白砂糖</li>
+        <li>食用油</li>
+        <li>生抽</li>
+        <li>蚝油</li>
+        <li>老抽</li>
+        <li>鸡精</li>
+        <li>姜片</li>
+        <li>芝麻</li>
+        <li>番茄酱</li>
+        <li>香醋</li>
+        <li>五香粉</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每份：</p>
+        <ul>
+        <li>排骨 300 g</li>
+        <li>白砂糖 30 g</li>
+        <li>食用油 300–350 ml
+        （油量需根据锅具大小调整，如用于深炸则以足以覆盖排骨 2/3
+        为准）</li>
+        <li>生抽 5 ml</li>
+        <li>蚝油 5 ml</li>
+        <li>老抽 5 ml</li>
+        <li>鸡精 2 g</li>
+        <li>姜片 2 片</li>
+        <li>芝麻 2 g</li>
+        <li>番茄酱 10 g</li>
+        <li>香醋 5 ml</li>
+        <li>五香粉 2 g</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>排骨与姜片放入冷水中，大火加热至水沸腾、出现大量泡沫后转中火，待水持续沸腾时再转小火焯水
+        2–3 分钟，捞出备用。</li>
+        <li>用开水反复清洗排骨 2–3 遍，确保彻底去除血沫。</li>
+        <li>在锅中倒入足够量的食用油进行深炸（油量依据锅具大小而定，建议约
+        300 ml 供一般家庭使用），待油温升至约 170°C 后，下排骨炸制 3–5
+        分钟，直至表面略呈金黄色，捞出控油。</li>
+        <li>另取干净锅，置于小火上加热 50 ml 热水，加入白砂糖 30
+        g，轻轻搅拌直至糖完全溶解，并略呈淡黄色。此步骤的重点在于观察糖溶解情况，无需过分依赖颜色变化。</li>
+        <li>将炸好的排骨倒入炒制糖水的锅中，迅速翻炒 30
+        秒后，依次加入香醋 5 ml、生抽 5 ml、蚝油 5 ml、鸡精 2 g、番茄酱
+        10 g、五香粉 2 g，再次翻炒 30
+        秒，使调料均匀裹覆排骨，然后加入开水至刚好没过排骨。</li>
+        <li>用大火将锅中液体煮沸后，加入老抽 5 ml
+        进行上色，并快速收汁；若排骨块较大，可转小火焖煮 5–10
+        分钟以便更好地入味，切勿采用中火长时间炖煮 20
+        分钟，以免损伤口感。</li>
+        <li>起锅装盘，撒上芝麻 2 g，即可享用。</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>炸排骨时可根据实际情况轻撒少量干淀粉于排骨表面，以提升酥脆口感。</li>
+        <li>焯水时注意火力变化：冷水下锅后先用大火至水沸腾、泡沫丰富，再转中火，最后转小火焯水；焯水后应使用开水清洗，避免因温差过大导致肉质变柴。</li>
+        <li>步骤四的关键在于确保白糖完全溶解，无须过分依赖颜色变化判断。</li>
+        <li>收汁时应快速翻炒，使排骨均匀裹上调料，避免长时间煮炖造成口感损失。</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

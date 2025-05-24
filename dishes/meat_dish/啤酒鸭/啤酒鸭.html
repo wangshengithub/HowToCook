@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="啤酒鸭的做法">啤酒鸭的做法</h1>
+        <figure>
+        <img src="./啤酒鸭.jpg" alt="啤酒鸭成品" />
+        <figcaption aria-hidden="true">啤酒鸭成品</figcaption>
+        </figure>
+        <p>啤酒鸭不仅入口鲜香,还带有一股啤酒清香。肉久吃不腻,汤久涮而不淡。风味独特,具有热而不浮,香而不腻的独特口味让人赞口不绝。一般初学者需要
+        1 小时即可完成。</p>
+        <p>预估烹饪难度：★★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>鸭肉</li>
+        <li>啤酒</li>
+        <li>生抽酱油</li>
+        <li>老抽酱油</li>
+        <li>姜</li>
+        <li>蒜</li>
+        <li>冰糖</li>
+        <li>干辣椒</li>
+        <li>料酒</li>
+        <li>盐</li>
+        <li>鸡精</li>
+        <li>丁香</li>
+        <li>八角</li>
+        <li>香叶</li>
+        <li>豆瓣酱</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每份：</p>
+        <ul>
+        <li>鸭肉半只（约 1kg）</li>
+        <li>啤酒 800ml</li>
+        <li>生抽酱油 10-15ml</li>
+        <li>老抽酱油 5-10ml</li>
+        <li>姜 5 片</li>
+        <li>蒜头 12 瓣</li>
+        <li>冰糖 10g</li>
+        <li>干辣椒 5 个</li>
+        <li>料酒 30ml</li>
+        <li>盐 8g</li>
+        <li>鸡精 5g</li>
+        <li>丁香 4 颗</li>
+        <li>八角 3 个</li>
+        <li>香叶 3 片</li>
+        <li>豆瓣酱 20g</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>把鸭子切成 3 cm
+        小块，鸭肉冷水下锅，加姜片、料酒，焯一遍水，盛出沥干水分，备用。</li>
+        <li>炒锅烧热，放入约 100ml
+        食用油，大火待油烧开，鸭肉入锅翻炒至上色。</li>
+        <li>待鸭肉完全变色（肉眼可见泛白），将鸭肉拨到锅的一边，倒入豆瓣酱和糖，小火翻炒出香味和糖色。</li>
+        <li>加入丁香、八角、香叶、干辣椒、生抽、老抽、蒜，翻炒出香味。</li>
+        <li>倒入啤酒，没过鸭肉，加入盐、鸡精，然后中火将鸭子烧 30
+        分钟（牙口不好的话可以再多烧 5 分钟）。</li>
+        <li>出锅盛盘，上桌食用。</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>啤酒的量一定要足够把所有鸭肉没过，啤酒最好选择清香型的。</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
