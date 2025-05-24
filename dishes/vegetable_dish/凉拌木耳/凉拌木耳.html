@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="凉拌木耳的做法">凉拌木耳的做法</h1>
+        <p>凉拌木耳，由于发放物资中有很多干货，木耳是较为健康的食物。且凉拌木耳的烹饪方式也相对简单。</p>
+        <p>预估烹饪难度：★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>干木耳
+        （湿木耳也可，但不能太久之前泡发的，必须是新鲜的湿木耳）</li>
+        <li>蒜瓣</li>
+        <li>白糖</li>
+        <li>小米辣</li>
+        <li>盐</li>
+        <li>香油</li>
+        <li>生抽</li>
+        <li>醋</li>
+        <li>芥末 （可以不用）</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每份（1 人量）:</p>
+        <ul>
+        <li>干木耳: 20g / 湿木耳: 120g</li>
+        <li>蒜瓣: 2-3 个</li>
+        <li>小米辣: 2 个</li>
+        <li>盐: 2 g</li>
+        <li>糖: 5-10g（依个人口味）</li>
+        <li>生抽: 15ml</li>
+        <li>醋: 15ml</li>
+        <li>香油: 5ml</li>
+        <li>芥末: （约 2cm）</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>泡发干木耳, 水量约为 400ml, 泡发约 45 分钟。
+        （湿木耳跳过此步骤）</li>
+        <li>将泡发好的木耳, 进行去根处理（如图 4, 5, 6）,
+        并彻底洗净。</li>
+        <li>起锅烧水，水开后放入木耳, 大火煮 1.5-2 分钟。</li>
+        <li>将蒜瓣、小米辣切碎放入碗中 （可选取中大碗）,
+        并依次加入盐、糖、生抽、醋、香油、芥末, 用量如上。</li>
+        <li>木耳盛出后沥水, 放入上一步碗中。</li>
+        <li>搅拌充分，端盘。</li>
+        </ul>
+        <p><img src="1.jpg" alt="干木耳" /> <img src="2.jpg"
+        alt="木耳" /> <img src="3.jpg" alt="泡发后" /> <img src="4.jpg"
+        alt="木耳根" /> <img src="5.jpg" alt="木耳根" /> <img
+        src="6.jpg" alt="剪去部分" /> <img src="7.jpg"
+        alt="水煮1.5-2分钟" /> <img src="8.jpg" alt="蒜瓣和干辣椒" />
+        <img src="9.jpg" alt="调料拌匀" /> <img src="10.jpg"
+        alt="成品" /></p>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>调味品的数量可以根据个人口味进行调整, 如果不喜欢芥末,
+        可以不加入。</li>
+        <li>等木耳冷却入味后口味更佳, 约 15 分钟。</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

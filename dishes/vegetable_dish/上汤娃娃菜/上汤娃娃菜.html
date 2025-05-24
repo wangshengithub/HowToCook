@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="上汤娃娃菜的做法">上汤娃娃菜的做法</h1>
+        <p>上汤娃娃菜的做法 （素菜、减肥餐）</p>
+        <p>预估烹饪难度：★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>娃娃菜</li>
+        <li>皮蛋</li>
+        <li>午餐肉（火腿肠）</li>
+        <li>葱</li>
+        <li>姜</li>
+        <li>蒜</li>
+        <li>盐</li>
+        <li>糖</li>
+        <li>淀粉</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>注意，这道菜仅有足够 2-4 人食用的版本。</p>
+        <ul>
+        <li>娃娃菜 700g</li>
+        <li>金针菇 10g（看个人喜好, 不喜欢 see you tomorrow 的就不放
+        😂）</li>
+        <li>皮蛋 一个（没有也可以不放）</li>
+        <li>午餐肉（火腿肠都可以替代）</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>娃娃菜洗净, 竖着切开切成段。</li>
+        <li>葱 3g 切 小段。蒜 10g 切片。姜 10g 切小片。</li>
+        <li>皮蛋切成丁, 火腿肠或者午餐肉切成丁（1cm 大小的丁）</li>
+        <li>金针菇洗净撕开</li>
+        <li>烧热水娃娃菜放进去十秒钟出一下水捞出。</li>
+        <li>热锅凉油, 加热锅倒入油过一遍就倒出来, 重新倒入一点油。</li>
+        <li>调至小火加入葱姜蒜，煎炒出香味即可。</li>
+        <li>加入适 300g 清水（水量没过娃娃菜即可）, 放入娃娃菜, 金针菇,
+        午餐肉</li>
+        <li>加入调味料蚝油、糖、盐、味精烧开。</li>
+        <li>煮 3 分钟, 煮开后开始装盘,
+        盛出娃娃菜后皮蛋放在上面把汤汁浇上去就可以了</li>
+        <li><figure>
+        <img src="./上汤娃娃菜.png" alt="上汤娃娃菜" />
+        <figcaption aria-hidden="true">上汤娃娃菜</figcaption>
+        </figure>
+        拍照技术有限, 味道还是很不错的</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

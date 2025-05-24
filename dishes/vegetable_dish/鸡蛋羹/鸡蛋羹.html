@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="鸡蛋羹的做法">鸡蛋羹的做法</h1>
+        <figure>
+        <img src="./鸡蛋羹.jpg" alt="鸡蛋羹成品" />
+        <figcaption aria-hidden="true">鸡蛋羹成品</figcaption>
+        </figure>
+        <p>鸡蛋羹，又称水蒸蛋，不需要准备复杂的食材，是一道简单快捷易做的菜，当早餐或是正餐都可，制作时长约为
+        15 分钟。</p>
+        <p>预估烹饪难度：★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>鸡蛋</li>
+        <li>食用盐</li>
+        <li>香油</li>
+        <li>生抽 / 味极鲜</li>
+        <li>白醋（可选）</li>
+        <li>藤椒油（可选）</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>按照 1 人的份量：</p>
+        <ul>
+        <li>鸡蛋 2 个</li>
+        <li>食用盐 3g</li>
+        <li>香油（或芝麻油） 2-4ml</li>
+        <li>生抽 / 味极鲜 8ml</li>
+        <li>白醋（或料酒） 2ml（可选）</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>两个鸡蛋放入碗中打散</li>
+        <li>加入食用盐 3g
+        <ul>
+        <li>盐起到了重要的增加底味和凝固作用</li>
+        </ul></li>
+        <li>加入 2ml 白醋，去除鸡蛋的腥味（可选）
+        <ul>
+        <li>加入米醋也行，但米醋的颜色会使鸡蛋微微发黑</li>
+        <li>还可以加入料酒，同样具有去腥的作用，且没有醋的酸味</li>
+        </ul></li>
+        <li>向碗中加入鸡蛋体积 1-1.5 倍的 70 度纯净水，并且搅拌均匀
+        <ul>
+        <li>1 倍的水鸡蛋更弹，1.5 倍的水鸡蛋更嫩</li>
+        </ul></li>
+        <li>过滤蛋液，去掉蛋液中的浮沫（可选，不过滤蒸出来的蛋会有气泡导致不好看）</li>
+        <li>向任意一口锅中加入 50ml 清水，水烧开后，放入盛有鸡蛋液的碗
+        <ul>
+        <li>蒸碗要盖上一个盖子，倒扣一个有凹槽的铁碟子，或者使用保鲜膜来减少水汽进入，这是为了避免其变成蜂窝状</li>
+        </ul></li>
+        <li><strong>中火</strong>蒸 <strong>10 分钟</strong>，</li>
+        <li>关火，再闷上 5 分钟</li>
+        <li>出锅</li>
+        <li>加入香油和生抽即可享用
+        <ul>
+        <li>也可用藤椒油代替香油，增加麻爽口感</li>
+        </ul></li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <p>上面介绍的是基础水蒸蛋做法，可以在此基础上派生，添加诸如火腿肠、肉馅、虾皮等材料，丰富鸡蛋羹的口感。</p>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
