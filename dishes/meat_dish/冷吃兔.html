@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="冷吃兔的做法">冷吃兔的做法</h1>
+        <p>预估烹饪难度：★★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>兔肉</li>
+        <li>盐</li>
+        <li>味精</li>
+        <li>蚝油</li>
+        <li>料酒</li>
+        <li>蒜</li>
+        <li>姜</li>
+        <li>小葱/大葱/洋葱</li>
+        <li>干辣椒</li>
+        <li>青花椒</li>
+        <li>八角</li>
+        <li>桂皮</li>
+        <li>香叶</li>
+        <li>山奈</li>
+        <li>白蔻</li>
+        <li>小茴香</li>
+        <li>白芝麻</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <ul>
+        <li>盐量 = 兔肉斤数 * 2 克</li>
+        <li>味精量 = 兔肉斤数 * 1 克</li>
+        <li>蚝油量 = 兔肉斤数 * 5 克</li>
+        <li>料酒量 = 兔肉斤数 * 10 克</li>
+        <li>油量 = 兔肉斤数 * 0.9 ～ 1 升</li>
+        <li>蒜量 = 兔肉斤数 * 二分之一头蒜</li>
+        <li>姜量 = 蒜量</li>
+        <li>小葱/大葱/洋葱总量 = 兔肉斤数 * 15 克</li>
+        <li>干辣椒量 = 辣椒段的总体积等于兔肉的总体积</li>
+        <li>青花椒量 = 3 斤兔肉对应吃饭用的小碗，一整碗花椒</li>
+        <li>八角量 = 兔肉斤数 * 1 粒</li>
+        <li>桂皮量 = 兔肉斤数 * 大拇指长短的一块</li>
+        <li>香叶量 = 兔肉斤数 * 5 片</li>
+        <li>山奈量 = 兔肉斤数 * 黄豆大小的一块</li>
+        <li>白蔻量 = 兔肉斤数 * 2 颗</li>
+        <li>小茴香量 = 兔肉斤数 * 15 克</li>
+        <li>白芝麻量 = 兔肉斤数 * 25 克</li>
+        </ul>
+        <p>使用上述条件，计算出计划使用的原材料比例。</p>
+        <h2 id="操作">操作</h2>
+        <ol type="1">
+        <li>蒜、姜扒皮并剁碎备用，八角、桂皮、香叶、山奈、白蔻、小茴香洗净备用。</li>
+        <li>干辣椒剪成 2 厘米的小段，洗净备用。</li>
+        <li>小葱/大葱/洋葱洗净，洋葱切成小块。</li>
+        <li>兔肉剁成 2 厘米的小块，加入盐、料酒、味精调味，腌制 15
+        分钟。</li>
+        <li>锅中倒油，油温 4
+        成热下小葱/大葱/洋葱，中小火煸炒出香味，待到小葱/大葱/洋葱微焦，将其捞出。</li>
+        <li>开大火升高油温，油温 8
+        成热时下入兔肉，炸制过程转中小火，炸至兔肉微微焦黄时捞出兔肉。</li>
+        <li>升高油温，倒入干辣椒、青花椒、八角、桂皮、香叶、山奈、白蔻、小茴香；转小火将辣椒段炸脆。</li>
+        <li>重新倒入兔肉，加入蚝油、翻炒几分钟。</li>
+        <li>关火，加入蒜、姜、白芝麻，翻炒均匀。</li>
+        <li>放置一夜更加入味。</li>
+        </ol>
+        <h2 id="附加内容">附加内容</h2>
+        <p>在操作的第 6
+        步骤中要注意：油量应该淹没兔肉，若未淹没需要及时补充。</p>
+        <p>在操作的第 7
+        步骤中要注意：辣椒极容易炸糊，炸糊会变成黑色，这个过程非常快，所以一定要小火，基本等到没太多水气蒸发时，就可以下兔肉了。</p>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

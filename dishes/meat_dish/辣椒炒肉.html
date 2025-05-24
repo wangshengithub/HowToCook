@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="辣椒炒肉的做法">辣椒炒肉的做法</h1>
+        <p>⚠️注意：本道菜需要一定料理基础，不推荐新手尝试。</p>
+        <p>预估烹饪难度：★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>青椒（吃辣的话推荐用杭椒，螺丝椒，不吃辣的用尖椒，甜椒）</li>
+        <li>猪瘦肉</li>
+        <li>盐</li>
+        <li>生抽</li>
+        <li>蚝油</li>
+        <li>大蒜</li>
+        <li>姜</li>
+        <li>酱油（可选）</li>
+        <li>豆豉（可选）</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每次制作前需要确定计划做几份。一份正好够 1 个人食用</p>
+        <p>总量：</p>
+        <ul>
+        <li>青椒的数量 = 份数 * 3 个。</li>
+        <li>肉量 = 份数 * 200g。</li>
+        <li>盐量 = 份数 * 3g。</li>
+        <li>生抽 = 份数 * 3ml。</li>
+        <li>蚝油 = 份数 * 3ml。</li>
+        <li>大蒜 = 份数 * 5g。</li>
+        <li>生姜 = 份数 * 5g。</li>
+        <li>酱油 = 份数 * 2ml。</li>
+        <li>豆豉 = 份数 * 3g。</li>
+        </ul>
+        <p>使用上述条件，计算出计划使用的原材料比例。</p>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>将<code>青椒</code>洗净，去除<code>青椒把</code>以及<code>青椒籽</code>，再用<code>滚刀手法</code>切好备用。</li>
+        <li><code>大蒜</code>用刀拍一下，再横切成<code>蒜瓣</code>，<code>生姜</code>切碎成<code>姜末</code>。</li>
+        <li>将<code>猪瘦肉</code>切成<code>肉片</code>（顺着猪肉的纹理切，即刀和肉的纹理呈水平线，出来的肉片，纹路呈“川”字）。</li>
+        <li>将切好的<code>猪肉</code>洗净，放入空碗，再加入计算好的<code>生抽</code>、<code>蚝油</code>、<code>盐</code>搅拌均匀，腌制
+        10 分钟。</li>
+        <li>热锅，不用倒油，把<code>切好的青椒</code>放入锅中，大火干煸至虎皮状后，再加
+        2g<code>盐</code>继续翻炒 1 分钟 后捞起。</li>
+        <li>不用洗锅，大火热锅，加入份数 * 8ml<code>油</code>，等待
+        30s，加入<code>蒜瓣</code>、<code>姜末</code>翻炒 15s。</li>
+        <li>加入腌制好的<code>猪肉</code>倒入锅内翻炒 2
+        分钟，再加入干煸过的<code>青椒</code>翻炒 1 分钟。</li>
+        <li>根据个人口味喜好加入<code>豆豉</code>，最后加入<code>酱油</code>，继续翻炒
+        30s。</li>
+        <li>出锅，盛盘。</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <p><strong>辣椒只能选择青椒，螺丝椒为最优解，切勿选择其他品种辣椒！</strong></p>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
