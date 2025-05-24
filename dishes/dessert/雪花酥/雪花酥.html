@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="雪花酥的做法">雪花酥的做法</h1>
+        <figure>
+        <img src="./雪花酥成品.jpg" alt="雪花酥成品" />
+        <figcaption aria-hidden="true">雪花酥成品</figcaption>
+        </figure>
+        <p>雪花酥是一个快捷简便的甜点，适合装盒送礼，制作耗时 30
+        分钟。</p>
+        <p>预估烹饪难度：★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <h3 id="工具">工具</h3>
+        <ul>
+        <li>不粘平底锅</li>
+        <li>烘焙刮刀（可用锅铲代替，小心使用破坏不粘锅涂层）</li>
+        <li>一次性塑料手套</li>
+        <li>雪花酥/牛轧糖模具</li>
+        <li>擀面杖</li>
+        </ul>
+        <h3 id="原料">原料</h3>
+        <ul>
+        <li>无盐黄油</li>
+        <li>棉花糖</li>
+        <li>全脂奶粉</li>
+        <li>混合坚果（三只松鼠每日坚果）</li>
+        <li>饼干（非夹心型饼干，推荐小奇福或购买使用雪花酥烘焙专用小饼干）</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每份：</p>
+        <ul>
+        <li>无盐黄油 20g</li>
+        <li>棉花糖 75g</li>
+        <li>全脂奶粉 40g</li>
+        <li>混合坚果 60g</li>
+        <li>饼干 75g</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>饼干超过一元硬币大小先切成小块</li>
+        <li>无盐黄油加入锅中，小火加热至无盐黄油完全融化</li>
+        <li>棉花糖加入锅中，使用刮刀搅拌，直至棉花糖融化并与无盐黄油均匀融合</li>
+        <li>20g
+        奶粉加入锅中，使用刮刀搅拌，奶粉与黄油棉花糖混合物搅拌均匀后立即关火</li>
+        <li>准备好的所有混合坚果与饼干趁热加入锅中，使用刮刀搅拌</li>
+        <li>搅拌到温度下降到手可以接触的温度后，戴上一次塑料手套，在锅中搓揉或者双手拿起拉扯，让饼干混合坚果与棉花糖黄油奶粉混合物分散均匀。</li>
+        <li>将上述步骤混合物压入模具中，边角压实，擀面杖擀平，未满的一边用手尽量压成直边</li>
+        <li>室温放凉，完全冷却后脱模，按照模具纹路切块，或切成自己喜欢的大小，撒上剩余奶粉，尽量使雪花酥每面都沾上奶粉</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>棉花糖加热时间越长，最后成品越硬</li>
+        <li>参考资料：<a href="https://b23.tv/P547ILO">【一口小锅
+        十分钟搞定的网红草莓“雪花酥”-哔哩哔哩】</a></li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

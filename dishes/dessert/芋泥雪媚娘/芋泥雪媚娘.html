@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="芋泥雪媚娘的做法">芋泥雪媚娘的做法</h1>
+        <figure>
+        <img src="./芋泥雪媚娘成品.jpg" alt="芋泥雪媚娘成品" />
+        <figcaption aria-hidden="true">芋泥雪媚娘成品</figcaption>
+        </figure>
+        <p>芋泥雪媚娘是一道甜品，很适合做给孩子吃，无需烤箱，手残党也可以做成功～预计制作时间
+        2 小时。</p>
+        <p>预估烹饪难度：★★★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>荔浦芋头（电商平台购买即可，实惠新鲜）</li>
+        <li>紫薯粉</li>
+        <li>牛奶</li>
+        <li>糯米粉</li>
+        <li>玉米淀粉</li>
+        <li>黄油</li>
+        <li>淡奶油</li>
+        <li>白砂糖</li>
+        <li>料理搅拌机（电动打蛋器也可以）</li>
+        <li>筛网</li>
+        <li>保鲜膜</li>
+        <li>白砂糖</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <ul>
+        <li>荔浦芋头 200g</li>
+        <li>紫薯粉 3g</li>
+        <li>牛奶 165g</li>
+        <li>糯米粉 a 50g</li>
+        <li>糯米粉 b 75g</li>
+        <li>玉米淀粉 22g</li>
+        <li>黄油 30g</li>
+        <li>淡奶油（推荐安佳） 145g</li>
+        <li>白砂糖 26g</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>芋头切块，大火煮熟至软（40 分钟即可），全部放入料理机</li>
+        <li>向内加入 30g 牛奶，25g 淡奶油，将其打成泥状</li>
+        <li>再向内加入 3g 紫薯粉，18g 白砂糖，继续搅拌打成细腻芋泥</li>
+        <li>取出另一个碗，加入全部糯米粉 b，22g 玉米淀粉，135g 牛奶，50g
+        白砂糖，混匀并过筛一遍，保鲜膜盖上并扎小洞，中火蒸半个小时</li>
+        <li>在蒸的过程中，将糯米粉 a
+        放入平底锅小火翻炒至微微发黄（即炒熟），作为手粉备用</li>
+        <li>将中火蒸完半小时的糯米牛奶混合物（果冻状）趁热加入黄油
+        30g，将黄油揉至面团完全吸收，然后放冰箱冷藏一小时</li>
+        <li>取出另一只碗，加入 120g 淡奶油，8g
+        白砂糖，打发至有纹路，装进裱花袋备用</li>
+        <li>取出冷藏后的面团，搓揉 5 分钟，分成 30g 一个，均匀撒上 2g
+        手粉防粘，擀成圆形，先挤上 5g 裱花奶油，然后放上 30g
+        芋泥，最后将面饼像包包子一样包起来（可以减去多余的皮）</li>
+        <li>包好后再均匀撒 2g 手粉防粘</li>
+        <li>重复以上两步直至原材料用光</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>制作时最好佩戴不粘手套</li>
+        <li>制作完即可食用，不用再加热</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
