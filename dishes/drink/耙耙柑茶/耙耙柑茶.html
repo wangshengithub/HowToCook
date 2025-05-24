@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="耙耙柑茶的做法">耙耙柑茶的做法</h1>
+        <figure>
+        <img src="citrus-tea.jpg" alt="citrus-tea" />
+        <figcaption aria-hidden="true">citrus-tea</figcaption>
+        </figure>
+        <p>预估烹饪难度：★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>原料:
+        <ul>
+        <li>耙耙柑（替换物请看附加内容）</li>
+        <li>茉莉绿茶</li>
+        <li>冰块</li>
+        <li><a
+        href="../../condiment/蔗糖糖浆/蔗糖糖浆.md">蔗糖糖浆</a>（可选）</li>
+        </ul></li>
+        <li>工具
+        <ul>
+        <li>搅拌机</li>
+        </ul></li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>一杯分量，约 300 毫升</p>
+        <ul>
+        <li>耙耙柑 1~2 个（200 克以上）</li>
+        <li>茉莉绿茶 2~4 克</li>
+        <li>冰块 60 克</li>
+        <li>1 : 1 蔗糖糖浆 10 克（可选）</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>茉莉绿茶调配（推荐比例=&gt;茶 : 水 : 冰 = 1~2 : 50 : 30）
+        <ul>
+        <li>称量 2~4 克茶叶置于容器，加入 100 毫升开水，泡 6 分钟</li>
+        <li>往泡好的绿茶中放入 60 克冰块冷却，可搅拌加速冷却</li>
+        <li>待冰块消失后，将茶叶过滤得到茉莉绿茶茶水约 160 毫升</li>
+        </ul></li>
+        <li>正式调配
+        <ul>
+        <li>选择一个杯子，建议使用容量在大约 300 毫升的透明玻璃杯</li>
+        <li>取出耙耙柑的肉瓣，并将外皮剥去，取得果肉</li>
+        <li>取 130 克果肉和 130 毫升茉莉绿茶放入搅拌机中</li>
+        <li>倒入 10 克蔗糖糖浆（可选，如果喜甜可放）</li>
+        <li>封盖启动搅拌机，搅拌 20 秒后将搅拌产物倒入杯中</li>
+        <li>取一点果肉撕碎撒在液面上</li>
+        </ul></li>
+        </ul>
+        <p>开始享受</p>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>耙耙柑可以用其他容易分离果肉的柑橘替代，比如丑橘</li>
+        <li>果肉和茶水比例为 1 :
+        1，如果需要配置更大的分量，可按比例提升用量</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
