@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="羊排焖面的做法">羊排焖面的做法</h1>
+        <p><img src="./羊排焖面.jpg" alt="羊排焖面" />
+        羊排焖面是一道硬菜，适合聚会时候大展身手。缺点就是有点花时间，优点就是好吃，而且一道菜补齐人体所需的三大营养物质。</p>
+        <p>预估烹饪难度：★★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>带皮羊排肉</li>
+        <li>青椒</li>
+        <li>甜椒</li>
+        <li>青椒</li>
+        <li>大葱</li>
+        <li>花椒</li>
+        <li>干辣椒</li>
+        <li>生姜</li>
+        <li>白砂糖</li>
+        <li>老抽</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>1 人份 * 2 顿 = 2 人份</p>
+        <ul>
+        <li>带皮羊排 500g</li>
+        <li>青椒，甜椒 各 2 个</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>羊肉冷水下锅焯水，水开了之后把血沫撇掉，捞出羊肉。</li>
+        <li>切好生姜（ 4 片)，放入干辣椒与花椒在碗里备用。</li>
+        <li>在炒锅加入油。（多一点也没关系）</li>
+        <li>油热之后，放入白砂糖，给羊肉炒出焦糖色。</li>
+        <li>羊肉水份炒干之后，放入盐、老抽，以及备好的调味料。</li>
+        <li>加入清水没过羊肉，大火煮沸之后，让其继续煮 10
+        分钟，之后小火炖煮 30 分钟。</li>
+        <li>在此期间，可以和面。和面的量以及操作方法在附加内容里讲解
+        *（注 1）。</li>
+        <li>放入青椒，甜椒，大葱，以及面皮进行翻炒。</li>
+        <li>翻炒均匀之后，即可出锅。</li>
+        </ul>
+        <p>*注 1：可以用超市的面条代替，但是尽量选择宽面。</p>
+        <h2 id="附加内容">附加内容</h2>
+        <p>(和面小指南 之 材料）</p>
+        <ul>
+        <li>中筋面粉 300 g</li>
+        <li>盐 3 g</li>
+        <li>水 180 ml</li>
+        </ul>
+        <p>(和面小指南 之 操作）</p>
+        <ul>
+        <li>先把材料混合均匀，加水边和边搅拌，然后把面团和到光滑</li>
+        <li>醒面（ 10 分钟）</li>
+        <li>再次和面到光滑</li>
+        <li>醒面（ 5 分钟）</li>
+        <li>把面团揉成条，切成 6 到 8 个小剂子</li>
+        <li>抹上油，等待 5 分钟</li>
+        <li>把面团剂子擀成面皮</li>
+        <li>放入锅中焖煮 4 分钟（一片一片操作）</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

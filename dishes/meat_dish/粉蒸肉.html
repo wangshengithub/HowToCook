@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="粉蒸肉的做法">粉蒸肉的做法</h1>
+        <p>粉蒸肉是一道经典的中式蒸菜，香味浓郁，口感软糯，营养丰富。适合家庭聚餐或节日宴客。此菜适合有一定烹饪经验的人士制作，预计从准备到完成约需
+        90 分钟。</p>
+        <p>预估烹饪难度：★★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>五花肉 500g（肥瘦相间）</li>
+        <li>蒸肉米粉 100g（推荐使用李锦记或自制）</li>
+        <li>生抽 15ml</li>
+        <li>老抽 10ml</li>
+        <li>料酒 15ml</li>
+        <li>郫县豆瓣酱 10g（可选）</li>
+        <li>姜末 10g</li>
+        <li>蒜末 10g</li>
+        <li>白砂糖 5g</li>
+        <li>土豆 300g（或南瓜 300g，作为垫底食材）</li>
+        <li>清水（蒸锅用）2000ml</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每次制作前需要确定计划做几份。一份正好够 3 个人吃。</p>
+        <p>每份：</p>
+        <ul>
+        <li>五花肉 250g</li>
+        <li>蒸肉米粉 50g</li>
+        <li>生抽 7.5ml</li>
+        <li>老抽 5ml</li>
+        <li>料酒 7.5ml</li>
+        <li>郫县豆瓣酱 5g（可选）</li>
+        <li>姜末 5g</li>
+        <li>蒜末 5g</li>
+        <li>白砂糖 2.5g</li>
+        <li>土豆或南瓜 150g</li>
+        <li>蒸锅用水 1000ml</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li>将五花肉洗净，切成长约 5cm、宽约 3cm、厚度约 0.5cm
+        的肉片</li>
+        <li>将姜、蒜切成颗粒直径不大于 1mm 的细末</li>
+        <li>取一大碗，放入切好的五花肉、15ml 生抽、10ml 老抽、15ml
+        料酒、10g 郫县豆瓣酱、10g 姜末、10g 蒜末、5g 白砂糖</li>
+        <li>用筷子搅拌均匀后，盖上保鲜膜，室温(20°C - 25°C)静置腌制 30
+        分钟</li>
+        <li>腌制完成后，加入 100g 蒸肉米粉，继续翻拌 2
+        分钟，确保每片肉都均匀裹粉</li>
+        <li>土豆去皮，切片厚度控制在 0.8cm，片面积约为 5cm x
+        5cm，重量控制在 300g</li>
+        <li>在直径 20cm 的深碗底部铺满土豆片，尽量无重叠</li>
+        <li>将拌好粉的五花肉均匀铺在土豆片上，压实</li>
+        <li>蒸锅中加入 2000ml 清水，开火加热至水面持续冒泡(100°C)</li>
+        <li>将装好食材的碗放入蒸锅内，盖好锅盖</li>
+        <li>保持中火蒸 60 分钟（火力保持在可持续沸腾的程度，约 600W
+        热功率）</li>
+        <li>时间结束后，用筷子插入肉块中央，若能轻松穿透并无明显阻力，则表明蒸熟</li>
+        <li>若未达到此状态，则继续加热 10 - 15
+        分钟，直至肉质软烂，油脂渗出</li>
+        <li>取出盛盘，即可食用</li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>如需自制米粉，可将大米 150g 放入锅中，中小火炒至微黄色（约 8
+        分钟），再加入干辣椒 1g、花椒 1g、八角
+        0.5g，炒香后用料理机打碎，过筛备用</li>
+        <li>蒸制期间如水量低于锅底高度 1cm，应立即补充 500ml 热水（90°C
+        以上），以维持蒸汽充足</li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>

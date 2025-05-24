@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            --han-red: #d32f2f;
+            --han-gold: #d4af37;
+            --han-beige: #f5e6d3;
+            --han-pink: #f8bbd0;
+        }
+        body {
+            font-family: '楷体', 'Comic Sans MS', serif;
+            background-color: var(--han-beige);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23f8bbd0' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.41l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.59l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid var(--han-red);
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: var(--han-red);
+            font-family: '楷体', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .nav a {
+            color: var(--han-red);
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav a:hover {
+            color: var(--han-gold);
+            background-color: var(--han-pink);
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: var(--han-red);
+            border-left: 4px solid var(--han-gold);
+            padding-left: 10px;
+            font-family: '楷体', serif;
+        }
+        p, li {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 2px solid var(--han-red);
+            margin-top: 30px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>程序员做饭指南</h1>
+    </div>
+    <div class="nav">
+        <a href="../">首页</a>
+        <a href="../dishes/index.html">菜谱（按品类排序）</a>
+        <a href="../starsystem/index.html">菜谱（按难度排序）</a>
+        <a href="../tips/index.html">做菜之前</a>
+        <a href="../starsystem/advanced/index.html">进阶知识</a>
+        <a href="../CODE_OF_CONDUCT.html">行为准则</a>
+    </div>
+    <div class="content">
+        <h1 id="鱼香茄子的做法">鱼香茄子的做法</h1>
+        <figure>
+        <img src="./yxqz1.jpg" alt="yuxiangqiezi" />
+        <figcaption aria-hidden="true">yuxiangqiezi</figcaption>
+        </figure>
+        <p>这个菜真的超级下饭，当个干饭王吧。</p>
+        <p>预估烹饪难度：★★★</p>
+        <h2 id="必备原料和工具">必备原料和工具</h2>
+        <ul>
+        <li>茄子</li>
+        <li>肉末</li>
+        <li>盐</li>
+        <li>糖</li>
+        <li>味精</li>
+        <li>生抽</li>
+        <li>老抽</li>
+        <li>醋</li>
+        <li>水淀粉</li>
+        <li>豆瓣酱</li>
+        </ul>
+        <h2 id="计算">计算</h2>
+        <p>每次制作前需要确定计划做几份。一份正好够一个人吃。</p>
+        <ul>
+        <li>茄子 2 根</li>
+        <li>肉末 20g</li>
+        <li>盐 3-5g</li>
+        <li>糖 5-10g</li>
+        <li>味精 5g</li>
+        <li>生抽 10ml</li>
+        <li>老抽 5ml</li>
+        <li>醋 10ml</li>
+        <li>水淀粉 100ml</li>
+        <li>豆瓣酱 20-30g</li>
+        <li>小葱、姜、蒜、小米辣 （根据自己口味）</li>
+        </ul>
+        <h2 id="操作">操作</h2>
+        <ul>
+        <li><p>将茄子切成条。</p>
+        <figure>
+        <img src="./yxqz2.jpg" alt="bz1" />
+        <figcaption aria-hidden="true">bz1</figcaption>
+        </figure></li>
+        <li><p>将肉切成肉沫，葱姜蒜切碎、小米椒切丁。</p>
+        <figure>
+        <img src="./yxqz3.jpg" alt="bz2" />
+        <figcaption aria-hidden="true">bz2</figcaption>
+        </figure></li>
+        <li><p>调鱼香汁：碗中放入盐、味精、糖、生抽、老抽、醋、水淀粉搅拌均匀。</p></li>
+        <li><p>锅中倒入 300ml
+        油，开小火（小火容易掌控），等油温七成热（小火大约 40
+        秒，有烟冒出）放入茄子炸两分钟，当茄子边缘微黄就捞出。多出的油可以盛出以后炒菜用。</p>
+        <figure>
+        <img src="./yxqz4.jpg" alt="bz4" />
+        <figcaption aria-hidden="true">bz4</figcaption>
+        </figure></li>
+        <li><p>锅中留 15-30ml 油，倒入肉沫炒至颜色变白就盛出来。</p>
+        <figure>
+        <img src="./yxqz5.jpg" alt="bz5" />
+        <figcaption aria-hidden="true">bz5</figcaption>
+        </figure></li>
+        <li><p>锅中倒入 15-30ml
+        油，放入豆瓣酱、葱白、姜、蒜炒香，然后倒入肉沫翻炒均匀。</p>
+        <figure>
+        <img src="./yxqz6.jpg" alt="bz6" />
+        <figcaption aria-hidden="true">bz6</figcaption>
+        </figure></li>
+        <li><p>加入 80-150ml
+        清水（水面预计茄子八成高度为准），倒入茄子、倒入料汁，爆炒入味收汁。最后放入葱翻炒均匀，就可以起锅了。</p>
+        <figure>
+        <img src="./yxqz7.jpg" alt="bz7" />
+        <figcaption aria-hidden="true">bz7</figcaption>
+        </figure></li>
+        </ul>
+        <h2 id="附加内容">附加内容</h2>
+        <ul>
+        <li>茄子看个人喜好，可以去皮，肉沫也可以多放一点。</li>
+        <li>参考: <a
+        href="https://www.zhms.cn/recipe/kbbrl.html?source=2">鱼香茄子详细步骤</a></li>
+        </ul>
+        <p>如果您遵循本指南的制作流程而发现有问题或可以改进的流程，请提出
+        Issue 或 Pull request 。</p>
+    </div>
+    <div class="footer">
+        <a href="https://wangshenblog.pages.dev/">© wangshen.</a>  All rights reserved.
+    </div>
+</body>
+</html>
